@@ -1,5 +1,5 @@
 .pet-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100vw;
     height: 400px;
     display: flex;
@@ -10,14 +10,14 @@
     width: 8em;
     height: 8em;
     mix-blend-mode: multiply;
-    animation: 10s linear infinite move;
+    animation:  move 8s ease-in-out infinite ;
 }
 
 @keyframes move {
-    0% { transform: translate(0 , 0);}
-    25% { transform: translate(calc(100vw - 8em), 0px);}
-    50% { transform: translate(calc(100vw - 8em), calc(-40vh + 8em));}
-    75% { transform: translate(0px, calc(-40vh + 8em));}
-    100% { transform: translate(0 , 0);}
+    0% { transform: translate(10vw , -30vh) scaleX(1) ;}
+    49% {transform: translate(calc(90vw - 8em), -30vh) scaleX(1);}
+    50% { transform: translate(calc(90vw - 8em), -30vh) scaleX(-1) ;}
+    99% {transform: translate(10vw , -30vh) scaleX(-1);}
+    100% { transform: translate(10vw , -30vh) scaleX(1);}
 
 }

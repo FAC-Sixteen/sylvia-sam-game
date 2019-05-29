@@ -4,7 +4,7 @@ import getPetData from '../utils/getPetData';
 import './Pet.css';
 
 const Pet = (props) => {
-    const name = "Cybunny";
+    const name = "Chomby";
     const [data, setData] = React.useState(null);
 
     React.useEffect(() => {
