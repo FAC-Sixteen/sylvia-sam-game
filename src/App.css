@@ -3,4 +3,8 @@
   background-image: url('./assets/neopets-backgrounds.png');
   background-size: cover;
   background-position: center bottom;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
