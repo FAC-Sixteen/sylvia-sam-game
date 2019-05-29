@@ -1,0 +1,23 @@
+.pet-container {
+    border: 1px solid black;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pet-img {
+    width: 8em;
+    height: 8em;
+    mix-blend-mode: multiply;
+    animation: 10s linear infinite move;
+}
+
+@keyframes move {
+    0% { transform: translate(0 , 0);}
+    25% { transform: translate(calc(100vw - 8em), 0px);}
+    50% { transform: translate(calc(100vw - 8em), calc(-40vh + 8em));}
+    75% { transform: translate(0px, calc(-40vh + 8em));}
+    100% { transform: translate(0 , 0);}
+
+}
