@@ -4,7 +4,7 @@ import "./HungerBar.css";
 const HungerBar = props => {
   return (
     <div className="bar">
-      <div className="bar-level" style={{ width: props.hunger + "%" }} />
+      <div data-testid="hunger-bar" className="bar-level" style={{ width: props.hunger + "%" }} />
     </div>
   );
 };
