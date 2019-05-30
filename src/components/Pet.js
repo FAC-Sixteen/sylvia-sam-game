@@ -1,13 +1,13 @@
 import React from "react";
 
-import getPetData from "../utils/getPetData";
+import {getPetData} from "../utils/getPetData";
 import "./Pet.css";
 import tombstone from '../assets/tombstone.jpg';
 
 const Pet = props => {
-  const name = "Chomby";
+  const name = props.name;
   const [data, setData] = React.useState(null);
-
+console.log("name in pets:",name)
   React.useEffect(() => {
     getPetData(name).then(response => {
       setData(response[0]);
