@@ -6,6 +6,8 @@ A nostalgic Neopets game, made by [Sylvia](https://github.com/seabasshoang) and 
 
 Deployed on netlify: https://neopets.netlify.com/
 
+![neopet](https://media.giphy.com/media/WjoT1sft7d1As/giphy.gif)
+
 ## Project Setup
 
 To run locally, clone this repo and run `npm i` to install packages.
@@ -18,19 +20,19 @@ Use React to build an interactive game that uses data from an API.
 
 
 ### Core Project Goals:
-- [ ] Query an API for data
-- [ ] Populate the UI with API data
-- [ ] Have some form of persistent state and interactivity
-- [ ] Have integration tests
+- [x] Query an API for data
+- [x] Populate the UI with API data
+- [x] Have some form of persistent state and interactivity
+- [x] Have integration tests
 
 ### Our Goals:
-- [ ] Neopets game!
-- [ ] Render a neopet image
-- [ ] Health bar and happiness bar
-- [ ] Panel of food items
+- [x] Neopets game!
+- [x] Render a neopet image
+- [x] Health bar and happiness bar
+- [x] Panel of food items
 - [ ] Panel of activities
-- [ ] Health/happiness bar decreases over time
-- [ ] Clicking on a food item increases health bar
+- [x] Health/happiness bar decreases over time
+- [x] Clicking on a food item increases health bar
 - [ ] Clicking on an activity increases happiness bar
 
 ## Problems
