@@ -13,12 +13,11 @@ function App() {
   const [hunger, setHunger] = React.useState(100);
   const [petName, setPetName] = React.useState(null);
 
-
   const interval = () => {
-    decrease(10, setHunger);
+    decrease(1, setHunger);
   };
   React.useEffect(() => {
-    const intervalId = window.setInterval(interval, 1000);
+    const intervalId = window.setInterval(interval, 300);
     return () => window.clearInterval(intervalId);
   }, []);
 
@@ -28,8 +27,7 @@ function App() {
   };
   React.useEffect(() => {
     newPet();
-  },[])
-  
+  }, []);
 
   return (
     <div className={hunger <= 0 ? "container graveyard" : "container"}>
@@ -38,11 +36,10 @@ function App() {
       <FoodOptions hunger={hunger} setHunger={setHunger} />
       <p>{hunger <= 0 ? "☠︎" : hunger}</p>
       <div>
-        <Pet name={petName} hunger={hunger}/>
+        <Pet name={petName} hunger={hunger} />
       </div>
     </div>
-    
-  )
+  );
 }
 
 export default App;
