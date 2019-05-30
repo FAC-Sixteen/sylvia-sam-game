@@ -7,32 +7,32 @@
 }
 
 .pet-img {
-    width: 8em;
-    height: 8em;
+    width: 12em;
+    height: 12em;
     mix-blend-mode: multiply;
     animation:  move 8s ease-in-out infinite ;
 }
 
 .tomb-img{
-    width: 10em;
-    height: 10em;
-    mix-blend-mode: multiply;
+    width: 12em;
+    height: 12em;
+    /* mix-blend-mode: multiply; */
     animation: tombmove 20s ease-in-out infinite;
     border: none;
 }
 
 
 @keyframes move {
-    0% { transform: translate(10vw , -30vh) scaleX(1) ;}
-    49% {transform: translate(calc(90vw - 8em), -30vh) scaleX(1);}
-    50% { transform: translate(calc(90vw - 8em), -30vh) scaleX(-1) ;}
-    99% {transform: translate(10vw , -30vh) scaleX(-1);}
-    100% { transform: translate(10vw , -30vh) scaleX(1);}
+    0% { transform: translate(10vw , -20vh) scaleX(1) ;}
+    49% {transform: translate(calc(90vw - 8em), -20vh) scaleX(1);}
+    50% { transform: translate(calc(90vw - 8em), -20vh) scaleX(-1) ;}
+    99% {transform: translate(10vw , -20vh) scaleX(-1);}
+    100% { transform: translate(10vw , -20vh) scaleX(1);}
 
 }
 @keyframes tombmove {
-    0% { transform: translate(10vw , -30vh)  ;}
-    50% { transform: translate(calc(90vw - 8em), -30vh)  ;}
-    100% { transform: translate(10vw , -30vh);}
+    0% { transform: translate(10vw , -20vh)  ;}
+    50% { transform: translate(calc(90vw - 8em), -20vh)  ;}
+    100% { transform: translate(10vw , -20vh);}
 
 }

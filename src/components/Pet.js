@@ -2,7 +2,7 @@ import React from "react";
 
 import {getPetData} from "../utils/getPetData";
 import "./Pet.css";
-import tombstone from '../assets/tombstone.jpg';
+import tombstone from '../assets/tombstone.png';
 
 const Pet = props => {
   const name = props.name;

@@ -32,7 +32,7 @@ function App() {
   
 
   return (
-    <div className="container">
+    <div className={hunger <= 0 ? "container graveyard" : "container"}>
       <header />
       {hunger <= 0 ? <button onClick={newPet}>Start Again!</button> : null}
       <FoodOptions hunger={hunger} setHunger={setHunger} />
@@ -41,7 +41,8 @@ function App() {
         <Pet name={petName} hunger={hunger}/>
       </div>
     </div>
-  );
+    
+  )
 }
 
 export default App;
