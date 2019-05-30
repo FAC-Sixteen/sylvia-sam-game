@@ -1,14 +1,14 @@
 import React from "react";
 import "./FoodOptions.css";
 
-import omelette from "../assets/foods/Carrot_and_pea_omelette.gif";
-import thornberry from "../assets/foods/thornberry.gif";
-import cake from "../assets/foods/Choc-faeriecake.gif";
-import negg from "../assets/foods/Negg.gif";
-import jelly from "../assets/foods/jelly.gif";
-import rotten from "../assets/foods/Om_cheese1.gif";
-import pruneJuice from "../assets/foods/Prune-juice.gif";
-import tcheaFruit from "../assets/foods/Tchea_Fruit.gif";
+import omelette from "../../assets/foods/Carrot_and_pea_omelette.gif";
+import thornberry from "../../assets/foods/thornberry.gif";
+import cake from "../../assets/foods/Choc-faeriecake.gif";
+import negg from "../../assets/foods/Negg.gif";
+import jelly from "../../assets/foods/jelly.gif";
+import rotten from "../../assets/foods/Om_cheese1.gif";
+import pruneJuice from "../../assets/foods/Prune-juice.gif";
+import tcheaFruit from "../../assets/foods/Tchea_Fruit.gif";
 
 const FoodOptions = props => {
   const foods = [

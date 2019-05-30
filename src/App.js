@@ -6,9 +6,9 @@ import decrease from "./utils/decrease";
 import randomPet from "./utils/randomPet";
 
 // components
-import Pet from "./components/Pet";
-import FoodOptions from "./components/FoodOptions";
-import HungerBar from "./components/HungerBar";
+import Pet from "./components/Pet/Pet";
+import FoodOptions from "./components/Options/FoodOptions";
+import HungerBar from "./components/HungerBar/HungerBar";
 
 function App() {
   const [hunger, setHunger] = React.useState(100);
