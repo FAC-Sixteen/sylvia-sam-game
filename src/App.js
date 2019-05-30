@@ -33,10 +33,15 @@ function App() {
   return (
     <div className={hunger <= 0 ? "container graveyard" : "container"}>
       <header />
-      {hunger <= 0 ? <button onClick={newPet}>Start Again!</button> : null}
       <FoodOptions hunger={hunger} setHunger={setHunger} />
       <HungerBar hunger={hunger} />
       <p>{hunger <= 0 ? "☠︎" : hunger}</p>
+      {hunger <= 0 ? (
+        <button className="start-again" onClick={newPet}>
+          Start Again!
+        </button>
+      ) : null}
+
       <div>
         <Pet name={petName} hunger={hunger} />
       </div>

@@ -26,8 +26,6 @@ const FoodOptions = props => {
   const [foodId2, setFoodId2] = React.useState(1);
   const [foodId3, setFoodId3] = React.useState(2);
 
-  // const foodNames = foods.map(food => food.name);
-
   const randomGenerator = func => {
     const max = foods.length;
     func(Math.floor(Math.random() * max));
@@ -63,41 +61,46 @@ const FoodOptions = props => {
   return (
     <div className="option-container">
       <div className="food-container">
-        <img src={foods[foodId1].name} alt={foods[foodId1].description} />
+        <div className="food-background">
+          <img src={foods[foodId1].name} alt={foods[foodId1].description} />
+          <p>
+            {foods[foodId1].description}: {foods[foodId1].value}pts
+          </p>
+        </div>
         <button
           id="food1"
           onClick={handleClick}
           disabled={props.hunger <= 0}
           value={foods[foodId1].value}
         />
-        <p>
-          {" "}
-          {foods[foodId1].description}: {foods[foodId1].value}pts
-        </p>
       </div>
       <div className="food-container">
-        <img src={foods[foodId2].name} alt={foods[foodId2].description} />
+        <div className="food-background">
+          <img src={foods[foodId2].name} alt={foods[foodId2].description} />
+          <p>
+            {foods[foodId2].description}: {foods[foodId2].value}pts
+          </p>
+        </div>
         <button
           id="food2"
           onClick={handleClick}
           disabled={props.hunger <= 0}
           value={foods[foodId2].value}
         />
-        <p>
-          {foods[foodId2].description}: {foods[foodId2].value}pts
-        </p>
       </div>
       <div className="food-container">
-        <img src={foods[foodId3].name} alt={foods[foodId3].description} />
+        <div className="food-background">
+          <img src={foods[foodId3].name} alt={foods[foodId3].description} />
+          <p>
+            {foods[foodId3].description}: {foods[foodId3].value}pts
+          </p>
+        </div>
         <button
           id="food3"
           onClick={handleClick}
           disabled={props.hunger <= 0}
           value={foods[foodId3].value}
         />
-        <p>
-          {foods[foodId3].description}: {foods[foodId3].value}pts
-        </p>
       </div>
     </div>
   );

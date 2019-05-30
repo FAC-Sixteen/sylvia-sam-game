@@ -1,11 +1,14 @@
 .bar {
   width: 10em;
+  margin-top: 2em;
   padding: 1px;
   border: 2px solid blue;
+  border-radius: 0.5em;
   background-color: white;
 }
 
 .bar-level {
   height: 1em;
   background-color: hotpink;
+  border-radius: 0.25em;
 }

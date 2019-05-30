@@ -13,3 +13,12 @@
   background-color: black;
   background-image: url("./assets/graveyard.png");
 }
+
+.start-again {
+  font-size: 2em;
+  padding: 1em;
+  margin: 1em;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  border: 2px solid hotpink;
+  border-radius: 0.5em;
+}
