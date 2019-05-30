@@ -3,9 +3,13 @@
   background-image: url("./assets/neopets-backgrounds.jpg");
   background-size: cover;
   background-position: center bottom;
-  background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.graveyard {
+  background-color: black;
+  background-image: url("./assets/graveyard.png");
 }
