@@ -34,6 +34,7 @@ Use React to build an interactive game that uses data from an API.
 - [x] Health/happiness bar decreases over time
 - [x] Clicking on a food item increases health bar
 - [ ] Clicking on an activity increases happiness bar
+- [x] Responsive
 
 ## Problems
 
