@@ -8,6 +8,7 @@ import randomPet from "./utils/randomPet";
 // components
 import Pet from "./components/Pet";
 import FoodOptions from "./components/FoodOptions";
+import HungerBar from "./components/HungerBar";
 
 function App() {
   const [hunger, setHunger] = React.useState(100);
@@ -34,6 +35,7 @@ function App() {
       <header />
       {hunger <= 0 ? <button onClick={newPet}>Start Again!</button> : null}
       <FoodOptions hunger={hunger} setHunger={setHunger} />
+      <HungerBar hunger={hunger} />
       <p>{hunger <= 0 ? "☠︎" : hunger}</p>
       <div>
         <Pet name={petName} hunger={hunger} />

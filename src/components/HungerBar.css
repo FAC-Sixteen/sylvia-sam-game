@@ -1,0 +1,11 @@
+.bar {
+  width: 10em;
+  padding: 1px;
+  border: 2px solid blue;
+  background-color: white;
+}
+
+.bar-level {
+  height: 1em;
+  background-color: hotpink;
+}
