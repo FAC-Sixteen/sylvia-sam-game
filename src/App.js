@@ -22,10 +22,11 @@ function App() {
   return (
     <div className="container">
       <header />
+      {hunger <= 0 ? <button onClick={() => setHunger(100)}>Start Again!</button> : null}
       <FoodOptions hunger={hunger} setHunger={setHunger} />
       <p>{hunger <= 0 ? "☠︎" : hunger}</p>
       <div>
-        <Pet />
+        <Pet hunger={hunger}/>
       </div>
     </div>
   );
