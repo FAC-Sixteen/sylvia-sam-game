@@ -3,6 +3,7 @@
 # Neopets X Tamagotchi
 
 A nostalgic Neopets game, made by [Sylvia](https://github.com/seabasshoang) and [Sam](https://github.com/starsuit)
+Deployed on netlify: https://neopets.netlify.com/
 
 ## Project Setup
 
