@@ -1,11 +1,12 @@
 import React from "react";
+import "./HungerBar.css";
 
-const Bar = props => {
+const HungerBar = props => {
   return (
     <div className="bar">
-      <div className="bar-level" />
+      <div className="bar-level" style={{ width: props.hunger + "%" }} />
     </div>
   );
 };
 
-export default Bar;
+export default HungerBar;
