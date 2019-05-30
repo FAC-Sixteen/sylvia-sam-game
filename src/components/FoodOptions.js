@@ -37,7 +37,10 @@ const FoodOptions = props => {
     const button = event.target;
     button.disabled = true;
     console.log(button);
-    props.setHunger(oldHunger => oldHunger + parseInt(button.value));
+    props.setHunger(oldHunger => {
+      if (oldHunger + parseInt(button.value) > 100) return 100;
+      return oldHunger + parseInt(button.value);
+    });
     switch (button.id) {
       case "food1":
         randomGenerator(setFoodId1);
