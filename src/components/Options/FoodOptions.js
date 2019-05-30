@@ -63,7 +63,7 @@ const FoodOptions = props => {
       <div className="food-container">
         <div className="food-background">
           <img src={foods[foodId1].name} alt={foods[foodId1].description} />
-          <p>
+          <p data-testid="food-button">
             {foods[foodId1].description}: {foods[foodId1].value}pts
           </p>
         </div>
