@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 
 //  util functions
-import decrease from "./utils/decrease";
 import randomPet from "./utils/randomPet";
 import { getAllPets } from "./utils/getPetData";
 
@@ -16,7 +15,7 @@ function App() {
   const [petData, setPetData] = React.useState(null);
 
   const interval = () => {
-    decrease(1, setHunger);
+    setHunger(oldValue => (oldValue <= 0 ? 0 : oldValue - 1));
   };
   React.useEffect(() => {
     const intervalId = window.setInterval(interval, 300);
