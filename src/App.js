@@ -26,8 +26,10 @@ function App() {
   const newPet = () => {
     getAllPets()
       .then(response => randomPet(response))
-      .then(setPetData)
-      .then(setHunger(100));
+      .then(name => {
+        setPetData(name);
+        setHunger(100);
+      });
   };
 
   React.useEffect(() => {
