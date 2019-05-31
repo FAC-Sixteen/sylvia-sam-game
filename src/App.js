@@ -4,6 +4,7 @@ import "./App.css";
 //  util functions
 import decrease from "./utils/decrease";
 import randomPet from "./utils/randomPet";
+import { getAllPets } from "./utils/getPetData";
 
 // components
 import Pet from "./components/Pet/Pet";
@@ -12,7 +13,7 @@ import HungerBar from "./components/HungerBar/HungerBar";
 
 function App() {
   const [hunger, setHunger] = React.useState(100);
-  const [petName, setPetName] = React.useState(null);
+  const [petData, setPetData] = React.useState(null);
 
   const interval = () => {
     decrease(1, setHunger);
@@ -23,10 +24,14 @@ function App() {
   }, []);
 
   const newPet = () => {
-    randomPet()
-      .then(setPetName)
-      .then(setHunger(100));
+    getAllPets()
+      .then(response => randomPet(response))
+      .then(name => {
+        setPetData(name);
+        setHunger(100);
+      });
   };
+
   React.useEffect(() => {
     newPet();
   }, []);
@@ -44,7 +49,7 @@ function App() {
       ) : null}
 
       <div>
-        <Pet name={petName} hunger={hunger} />
+        <Pet petData={petData} hunger={hunger} />
       </div>
     </div>
   );
