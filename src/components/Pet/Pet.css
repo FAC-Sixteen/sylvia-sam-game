@@ -1,7 +1,7 @@
 .pet-container {
     /* border: 1px solid black; */
     width: 100vw;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: flex-end;
 }
@@ -23,16 +23,16 @@
 
 
 @keyframes move {
-    0% { transform: translate(10vw , -20vh) scaleX(1) ;}
-    49% {transform: translate(calc(90vw - 8em), -20vh) scaleX(1);}
-    50% { transform: translate(calc(90vw - 8em), -20vh) scaleX(-1) ;}
-    99% {transform: translate(10vw , -20vh) scaleX(-1);}
-    100% { transform: translate(10vw , -20vh) scaleX(1);}
+    0% { transform: translate(10vw , -10vh) scaleX(1) ;}
+    49% {transform: translate(calc(90vw - 8em), -10vh) scaleX(1);}
+    50% { transform: translate(calc(90vw - 8em), -10vh) scaleX(-1) ;}
+    99% {transform: translate(10vw , -10vh) scaleX(-1);}
+    100% { transform: translate(10vw , -10vh) scaleX(1);}
 
 }
 @keyframes tombmove {
-    0% { transform: translate(10vw , -20vh)  ;}
-    50% { transform: translate(calc(90vw - 8em), -20vh)  ;}
-    100% { transform: translate(10vw , -20vh);}
+    0% { transform: translate(10vw , -10vh)  ;}
+    50% { transform: translate(calc(90vw - 8em), -10vh)  ;}
+    100% { transform: translate(10vw , -10vh);}
 
 }
