@@ -53,6 +53,7 @@ function App() {
         <p className="instructions">Feed your Neopets to keep them from getting too hungry by clicking on the foods! </p>
       </header>
       <FoodOptions hunger={hunger} setHunger={setHunger} />
+      {petData ? <p className="pet-name">{petData.name}</p> : null}
       <HungerBar hunger={hunger} />
       <p>{hunger <= 0 ? "☠︎" : hunger}</p>
       {hunger <= 0 ? (

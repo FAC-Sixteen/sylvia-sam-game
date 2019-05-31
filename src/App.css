@@ -23,6 +23,13 @@
   border-radius: 0.5em;
 }
 
+
+.pet-name {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 5px;
+}
+  
 .logos {
   display: flex;
   justify-content: space-around;
