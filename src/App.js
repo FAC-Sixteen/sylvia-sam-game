@@ -10,6 +10,10 @@ import Pet from "./components/Pet/Pet";
 import FoodOptions from "./components/Options/FoodOptions";
 import HungerBar from "./components/HungerBar/HungerBar";
 
+//assets 
+import neopets from './assets/Neopets_logo.gif';
+import tamagotchi from './assets/Tamagotchi_logo.gif';
+
 function App() {
   const [hunger, setHunger] = React.useState(100);
   const [petData, setPetData] = React.useState(null);
@@ -37,7 +41,17 @@ function App() {
 
   return (
     <div className={hunger <= 0 ? "container graveyard" : "container"}>
-      <header />
+      <header>
+        <div className="logos">
+          <img src={neopets} alt="neopets logo"/>
+          <p>x</p>
+          <img src={tamagotchi} alt="tamagotchi logo"/>
+        </div>
+        <h1 className="title" aria-label="Neopets x Tamagotchi">Neopets x Tamagotchi</h1> 
+        
+        <p className="description">Where Neopets meets Tamagotchi! </p>
+        <p className="instructions">Feed your Neopets to keep them from getting too hungry by clicking on the foods! </p>
+      </header>
       <FoodOptions hunger={hunger} setHunger={setHunger} />
       {petData ? <p className="pet-name">{petData.name}</p> : null}
       <HungerBar hunger={hunger} />
