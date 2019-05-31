@@ -39,6 +39,7 @@ function App() {
     <div className={hunger <= 0 ? "container graveyard" : "container"}>
       <header />
       <FoodOptions hunger={hunger} setHunger={setHunger} />
+      {petData ? <p className="pet-name">{petData.name}</p> : null}
       <HungerBar hunger={hunger} />
       <p>{hunger <= 0 ? "☠︎" : hunger}</p>
       {hunger <= 0 ? (
